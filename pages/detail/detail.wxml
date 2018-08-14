@@ -1,0 +1,51 @@
+<!--pages/detail/detail.wxml-->
+<scroll-view class='scroll_view' scroll-y style='width:{{width}}px; height:{{height}}px;' >
+  <image src="{{productData.p_photo_url}}" mode='aspectFit' class='product_photo'></image>
+
+  <!-- 标题 -->
+  <view class='title_view'>
+    <label>{{productData.p_name}}</label>
+  </view>
+
+  <!-- 产品介绍 -->
+  <view class='introduce_view'>
+    <view class='top_view'>
+      <label class='left_line'></label>
+      <label class='center_title'>产品介绍</label>
+      <label class='right_line'></label>
+    </view>
+    
+    <label class='type'>产品型号: {{productData.p_model}}</label>
+    <label class='price'> 参考价格: {{productData.p_price}}元</label>
+    <label class='match_product'>搭配产品: {{productData.p_supplies}}</label>
+    <label class='suitable'>适用人群: {{productData.p_target_customer}}</label>
+    <label class='technique'>产品技术: {{productData.p_tech}}</label>
+    <label class='effect'>功效: {{productData.p_effect}}</label>
+  </view>
+
+  <view class='detail_view'>
+    <view class='top_view'>
+      <label class='left_line'></label>
+      <label class='center_title'>产品解读</label>
+      <label class='right_line'></label>
+    </view>
+    <label class='detail_label'>{{productData.p_introduced}}</label>
+  </view>
+
+<view class='para_view'>
+  <view class='top_view'>
+    <label class='left_line'></label>
+    <label class='center_title'>规格参数</label>
+    <label class='right_line'></label>
+  </view>
+
+  <label class='suitable'>重量： {{productData.p_weight}}</label>
+  <label class='suitable'>尺寸： {{productData.p_size}}</label>
+  <label class='suitable'>电池容量： {{productData.p_battery_capacity}}</label>
+  <label class='suitable'>工作时间： {{productData.p_working_hours}}</label>
+  <label class='suitable'>颜色： {{productData.p_color}}</label>
+  <label class='suitable'>品牌归属： {{productData.country_name}}</label>
+  <label class='suitable'>关键规格：{{productData.p_specifications}}</label> 
+</view> 
+
+</scroll-view>

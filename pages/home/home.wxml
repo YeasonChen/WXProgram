@@ -1,0 +1,77 @@
+<!--pages/home/home.wxml-->
+
+<view class='search_bar' catchtap='gotoSearch'>
+  <view class='search_input'>
+    <label>输入您想搜索的品牌或产品名</label>
+  </view>
+  <image src="../../Image/search_icon@2x.png" class='search_icon'></image>
+</view>
+
+<!-- 左侧选择框 -->
+<view class='menu_background' style='height:{{height - 52}}px;'>
+  <view wx:for="{{allData.title}}" wx:key="*this" class='menu_icon' id='{{index==selectedId ? "selected" : ""}}' bindtap='selectedMenu' data-index='{{index}}'>
+    <label>{{item}}</label>
+  </view>
+</view>
+
+<!-- 右侧内容框 -->
+<scroll-view class='content_view' style='width:{{width - 84}}px; height:{{height - 52}}px;' scroll-y>
+
+  <!-- Cell -->
+  <view class='menu_cell' wx:for="{{contentArrayM}}" wx:key="cell">
+
+    <!-- 标题栏 -->
+    <view class='title_background'>
+      <label class='left_line'></label>
+      <label class='center_title'>{{item.name}}</label>
+      <label class='right_line'></label>
+    </view> 
+
+    <!-- 带图标的icon -->
+    <view wx:if="{{item.values[0].icon}}" wx:for="{{item.values}}" wx:key="unique" wx:for-item="itemName" class='type_btn' style='width:{{(width - 84)/4}}px; height:{{(width - 84)/4}}px' bindtap='typeDetail' data-keyword='{{itemName.name}}'>
+      <image style="width: {{(width - 84)/9}}px; height: {{(width - 84)/9}}px;" mode="aspectFit" src="{{itemName.icon}}"></image> 
+      <label>{{itemName.name}}</label>
+    </view> 
+
+    <!-- 没有图标的icon -->
+    <view wx:if="{{!item.values[0].icon}}" wx:for="{{item.values}}" wx:key="unique" wx:for-item="itemName" class='type_btn' style='width:{{(width - 84)/3}}px; height:80px' bindtap='typeDetail' data-keyword='{{itemName.name}}'>
+      <label wx:if="{{itemName.name}}" class='english_name'>{{itemName.name}}</label> 
+      <label wx:if="{{itemName.nick_name}}" class='chinese_name'>{{itemName.nick_name}}</label> 
+    </view>   
+
+  </view> 
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</scroll-view>

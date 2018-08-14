@@ -1,0 +1,81 @@
+/* pages/search/search.wxss */
+
+.search_bar {
+  height: 104rpx;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search_holder {
+  font-size: 28rpx;
+  color: rgb(179, 179, 179);
+}
+
+.search_input {
+  height: 64rpx;
+  margin-left: 30rpx; 
+  border: 0.5px solid rgb(179, 179, 179);
+  border-radius: 34rpx;
+  font: 28rpx;
+  color: rgb(128, 128, 128);
+  flex-grow: 1;
+}
+
+.search_icon {
+  width: 36rpx;
+  height: 36rpx;
+  position: absolute;
+  top: 35rpx;
+}
+
+.cancel_btn {
+  width: 115rpx; 
+  height: 64rpx;
+  font-size: 32rpx;
+  color: rgb(128, 128, 128);
+  background-color: white; 
+  line-height: 64rpx;
+  flex-grow: 0;
+  padding-top: 2rpx;
+  padding-left: 17rpx;
+}
+
+.cancel_btn::after {
+  border-width: 0px;
+}
+
+.hot_container {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 30rpx;
+}
+
+.hot_container .title {
+  margin-top: 10rpx;
+  margin-bottom: 15rpx;
+  font-size: 30rpx;
+  color: rgb(92, 92, 92);
+  width: 100%;
+}
+
+.item_btn {
+  height: 60rpx;
+  margin: 16rpx 36rpx 15rpx 0px;
+  border-radius: 30rpx; 
+  border: 1px solid rgb(210, 210, 210);  
+  font-size: 30rpx;
+  color: rgb(179, 179, 179);
+  line-height: 60rpx; 
+  background-color: white;
+  overflow: visible;
+  box-sizing: border-box;
+}
+
+ .item_btn::after {
+  content: none;
+} 
+

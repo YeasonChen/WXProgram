@@ -1,0 +1,126 @@
+/* pages/home/home.wxss */
+
+.search_bar {
+  height: 52px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search_input {
+  height: 32px;
+  margin: 0px 15px;
+  border: 0.5px solid rgb(179, 179, 179);
+  border-radius: 17px;
+  flex-grow: 1;
+  padding-left: 190rpx;
+  display: flex;
+  align-items: center;
+}
+
+.search_input label {
+  font-size: 28rpx;
+  color: rgb(179, 179, 179);
+}
+
+.search_icon {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 17px;
+  left: 170rpx;
+}
+
+/* 左侧菜单栏布局属性 */
+ .menu_background {
+  background-color: rgb(249, 249, 249); 
+  width: 84px;
+  display: flex;
+  flex-direction: column;
+  float: left;
+} 
+
+.menu_icon {
+  width: 100%;
+  height: 108rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: rgb(92, 92, 92);
+  line-height: 108rpx;
+}
+
+#selected {
+  background-color: white;
+  font-weight: bold;
+  border-left: 4px solid #ff4a2f;
+  box-sizing: border-box;
+}
+
+#selected label {
+  margin-left: -4px;
+}
+
+/* 右侧内容布局属性 */
+.content_view {
+  float: left;
+}
+
+.menu_cell {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.title_background {
+  width: 100%;
+  height: 90rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.left_line {
+  margin-top: 25rpx;
+  background-color: rgb(210, 210, 210);
+  width: 118rpx;
+  height: 1px;
+}
+
+.center_title {
+  margin: 25rpx 38rpx 0px;
+  font-size: 28rpx;
+  font-weight: bold;
+}
+
+.right_line {
+  margin-top: 25rpx;
+  background-color: rgb(210, 210, 210);
+  width: 118rpx;
+  height: 1px;
+}
+
+.type_btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.type_btn label {
+  width: 100%;
+  text-align: center;
+  font-size: 26rpx;
+  color: rgb(92, 92, 92);
+  margin-top: 5px;
+}
+
+.type_btn .chinese_name{
+  margin-top: 2px;
+}
+
+.type_btn .english_name{
+  margin-top: 0;
+}
+

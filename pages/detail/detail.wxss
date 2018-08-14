@@ -1,0 +1,145 @@
+/* pages/detail/detail.wxss */
+
+.scroll_view {
+  font-size: 14px;
+  color: rgb(92, 92, 92);
+}
+
+.product_photo {
+  width: 100%;
+}
+
+.title_view {
+  width: 100%;
+  height: 60rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.title_view label {
+  font-size: 16px;
+  line-height: 60rpx;
+  color: rgb(92, 92, 92);
+  display: block; 
+  width: 100%; 
+  text-align: center;
+}
+
+
+/* 产品介绍 */
+.introduce_view {
+  margin-top: 60rpx;
+  width: 100%;
+  line-height: 24px;
+}
+
+.top_view {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20rpx;
+}
+
+.left_line {
+  margin-top: 25rpx;
+  background-color: rgb(210, 210, 210);
+  width: 118rpx;
+  height: 1px;
+}
+
+.center_title {
+  margin: 5rpx 38rpx 0px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.right_line {
+  margin-top: 25rpx;
+  background-color: rgb(210, 210, 210);
+  width: 118rpx;
+  height: 1px;
+}
+
+.type {
+  margin-left: 50rpx;
+  display: inline-block;
+  width: 43%;
+  padding: 2px 0px;
+}
+
+.market_time {
+  margin-left: 50rpx; 
+  display: inline-block;
+  width: 43%;
+  padding: 2px 0px;
+}
+
+.match_product {
+  margin-left: 50rpx;
+  display: inline-block;
+  width: 80%;
+  padding: 2px 0px;
+}
+
+.price {
+  margin-left: 50rpx;
+  display: inline-block;
+  width: 43%;
+  padding: 2px 0px;
+}
+
+.suitable {
+  margin-left: 50rpx;
+  display: block;
+  margin-right: 50rpx;
+  padding: 2px 0px;
+}
+
+.technique {
+  margin-left: 50rpx;
+  display: block;
+  margin-right: 50rpx;
+  padding: 2px 0px;
+}
+
+.effect {
+  margin-left: 50rpx;
+  display: block;
+  margin-right: 50rpx;
+  padding: 2px 0px;
+}
+
+/* 产品详解 */
+.detail_view {
+  margin-top: 30rpx;
+  line-height: 24px;
+}
+
+.detail_view .detail_label {
+  margin-left: 50rpx;
+  margin-right: 50rpx;
+  display: block;
+} 
+
+/* 规格参数 */
+.para_view {
+  margin-top: 30rpx;
+  padding-bottom: 100rpx;
+  line-height: 24px;
+}
+
+.para_view .left {
+  margin-left: 50rpx;
+  display: inline-block;
+  width: 43%;
+  padding: 2px 0px;
+}
+
+.para_view .right {
+  margin-left: 50rpx;
+  display: inline-block;
+  width: 43%;
+  padding: 2px 0px;
+}

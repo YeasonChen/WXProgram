@@ -1,0 +1,22 @@
+<!--pages/products/products.wxml-->
+<view wx:if="{{fromSearch}}" class='search_bar' catchtap='gotoSearch'>
+  <view class='search_input'>
+    <label>输入您想搜索的品牌或产品名</label>
+  </view>
+  <image src="../../Image/search_icon@2x.png" class='search_icon'></image>
+</view>
+
+<scroll-view class='scroll_view' scroll-y style='width:{{width}}px; height:{{height}}px;' bindscrolltolower="searchScrollLower">
+  <view wx:for="{{countArray}}" wx:key="unique" class='cell' bindtap='gotoDetail'    data-productId='{{item.id}}' style='height: {{cellHeight}}rpx'>
+    <image src="{{item.p_photo_url}}" mode='aspectFit' class='product_photo'></image>
+    <label class='title_name'>{{item.brand_name}}</label> 
+    <label class='title_label'>{{item.p_name}}</label> 
+    <view class='bottom_view' wx:if="{{count-1 != index}}"></view>
+  </view>
+</scroll-view>
+
+<view wx:if="{{hiddenToast}}" class='toast_container' animation="{{animationData}}">
+  <view class='toast_view'>
+    <label>暂无相关结果，换个关键词试试吧</label>
+  </view> 
+</view> 

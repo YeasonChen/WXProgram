@@ -1,0 +1,15 @@
+<!--pages/search/search.wxml-->
+
+<view class='search_bar'>
+  <input class='search_input' focus='{{focus}}' placeholder='输入您想搜索的品牌或产品名' placeholder-class='search_holder' bindfocus="beganInput" style='  margin-right: {{marginRight}}rpx; padding-left: {{placeHolderLeft}}rpx;' confirm-type='search' bindconfirm="confirm" bindinput="inputing" value="{{value}}">
+  </input>
+  <image src="../../Image/search_icon@2x.png" class='search_icon' style='left: {{iconLeft}}rpx;'></image>
+   <button class='cancel_btn' hidden='{{hiddenCancelBtn}}' bindtap='cancelSearch'>取消     </button> 
+</view>
+
+<view class='hot_container'>
+  <label wx:if="{{titles}}" class='title'>大家都在找</label>
+  <button wx:for="{{titles}}" wx:key="*this" class='item_btn' bindtap='hotSearch' data-keyword='{{item}}'>{{item}}</button>
+</view>
+
+
